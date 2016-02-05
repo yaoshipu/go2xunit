@@ -1,5 +1,6 @@
 build:
-  image: golang:1.4.3
+  image: golang:1.5.3
   commands:
+    - go version
     - go build
     - go test go2xunit_test.go -v
