@@ -24,14 +24,14 @@ func Test_NumFailed(t *testing.T) {
 	}
 }
 
-func loadGotest(filename string, t *testing.T) ([]*Suite, error) {
-	file, err := os.Open(filename)
-	if err != nil {
-		t.Fatalf("can't open %s - %s", filename, err)
-	}
+// func loadGotest(filename string, t *testing.T) ([]*Suite, error) {
+// 	file, err := os.Open(filename)
+// 	if err != nil {
+// 		t.Fatalf("can't open %s - %s", filename, err)
+// 	}
 
-	return gt_Parse(file)
-}
+// 	return gt_Parse(file)
+// }
 
 func Test_parseOutput(t *testing.T) {
 	filename := "data/gotest.out"
