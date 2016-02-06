@@ -4,4 +4,11 @@ build:
     - go version 
     - go build
     - go test go2xunit_test.go -v
-    - pwd
+
+deploy:
+  rsync:
+    user: root
+    host: 172.17.0.1
+    port: 22
+    source: go2xunit
+    target: /disk1/downloads/
